@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema Restaurante</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<nav>
+    <a href="/">Menú</a>
+    <a href="/orders">Pedidos</a>
+    <a href="/reservations">Reservas</a>
+    <a href="/reports">Reportes</a>
+    <a href="/login">Login</a>
+</nav>
+
+<div class="container">
+
+{% block content %}
+{% endblock %}
+
+</div>
+
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+</body>
+</html>

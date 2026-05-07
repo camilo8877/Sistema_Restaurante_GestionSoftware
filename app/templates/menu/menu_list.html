@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Menú Digital</h1>
+
+<a href="/add">Agregar Plato</a>
+
+<ul>
+
+    {% for menu in menus %}
+
+        <li>
+            {{ menu.name }} -
+            {{ menu.category }} -
+            ${{ menu.price }}
+        </li>
+
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
