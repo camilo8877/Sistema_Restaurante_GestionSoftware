@@ -25,7 +25,7 @@ def create_app():
     app.register_blueprint(reservation_bp)
     app.register_blueprint(report_bp)
 
-    with app.app_context():
-        db.create_all()
+    #with app.app_context():
+        #db.create_all()
 
     return app
