@@ -8,4 +8,4 @@ class Order(db.Model):
     customer_name = db.Column(db.String(100))
     status = db.Column(db.String(50))
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    
+
