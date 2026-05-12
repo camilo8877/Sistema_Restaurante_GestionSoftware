@@ -3,9 +3,9 @@ from app.models.menu import Menu
 from app import db
 
 menu_bp = Blueprint("menu", __name__)
-from flask import Blueprint, render_template, request, redirect
-from app.models.menu import Menu
-from app import db
+# from flask import Blueprint, render_template, request, redirect
+# from app.models.menu import Menu
+# from app import db
 
 
 menu_bp = Blueprint("menu", __name__)
