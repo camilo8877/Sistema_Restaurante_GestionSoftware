@@ -11,3 +11,5 @@ if __name__ == "__main__":
     # 2. '0.0.0.0' permite que la app sea visible fuera del contenedor
     # 3. debug debe estar en False para producción
     app.run(host='0.0.0.0', port=port, debug=False)
+
+    
